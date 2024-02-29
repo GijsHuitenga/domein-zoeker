@@ -1,0 +1,38 @@
+
+.main {
+  width: 70vw;
+  margin: 0 auto;
+  padding-top: 4rem;
+  display: flex;
+}
+
+.winkelwagen {
+  width: 70%;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  border-right: 2px solid #dee2e6;
+}
+
+.overzicht {
+  width: 30%;
+}
+
+.winkelwagen h3,
+.overzicht h3 {
+  font-weight: 400;
+}
+
+.winkelwagen hr,
+.overzicht hr {
+  border: 1px solid #dee2e6;
+}
+
+.producten,
+.totaal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totaal {
+  padding-bottom: 1rem;
+}

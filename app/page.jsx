@@ -2,6 +2,7 @@
 
 import Button from '@/components/button';
 import Table from '@/components/table';
+import TableRow from '@/components/table-row';
 import { getTLDPrices } from '@/services/domain';
 
 import styles from '@/styles/page.module.css';
@@ -46,7 +47,6 @@ export default function Home() {
     <main className={styles.main}>
       <h3>Domein zoeken</h3>
       <form>
-        {/* <Button>Zoeken</Button> */}
         <input 
           type='text' 
           id='search' 
@@ -60,18 +60,9 @@ export default function Home() {
       <Table>
         {
           !isFetching && query == '' ? tlds.map(domain => (
-            <tr key={domain.domain}>
-              <th>{domain.domain}</th>
-              <th>{domain.status}</th>
-              <th>&euro;{domain.price}</th>
-              <th><Button>Kopen</Button></th>
-            </tr>)) : filtered.map(domain => (
-            <tr key={domain.domain}>
-              <th>{domain.domain}</th>
-              <th>{domain.status}</th>
-              <th>&euro;{domain.price}</th>
-              <th><Button>Kopen</Button></th>
-            </tr>
+            <TableRow domain={domain} />
+          )) : filtered.map(domain => (
+            <TableRow domain={domain} />
           ))
         }
       </Table>

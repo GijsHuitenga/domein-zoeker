@@ -1,5 +1,6 @@
 
 import Header from "@/components/layout/header";
+import Providers from "./storeProvider";
 
 import "@/styles/globals.css";
 
@@ -11,10 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-        {children}
-      </body>
+        <body>
+          <Header />
+          <Providers>{children}</Providers>
+        </body>
     </html>
   );
 }
