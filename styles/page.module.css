@@ -1,0 +1,30 @@
+
+.main {
+  width: 50vw;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+.main h3 {
+  font-weight: 400;
+}
+
+.main form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.search {
+  width: 100%;
+  padding: 8px 12px;
+  margin-left: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  font-family: inherit;
+}
+
+.main hr {
+  border: 1px solid #dee2e6;
+}

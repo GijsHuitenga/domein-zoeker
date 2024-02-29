@@ -1,0 +1,30 @@
+
+.table {
+  width: 100%;
+}
+
+/* .table thead {
+  
+} */
+
+.table thead th {
+  text-align: start;
+}
+
+/* .table tbody {
+
+} */
+
+.table tbody th {
+  font-weight: 400;
+  text-align: start;
+}
+
+.table tbody th:first-child {
+  width: 40%;
+}
+
+.table tbody th:last-child {
+  width: 15%;
+  text-align: end;
+}
