@@ -1,6 +1,5 @@
 "use client";
 
-import Button from '@/components/button';
 import Table from '@/components/table';
 import TableRow from '@/components/table-row';
 import { getTLDPrices } from '@/services/domain';
