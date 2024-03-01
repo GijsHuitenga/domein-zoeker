@@ -1,6 +1,5 @@
 "use client";
 
-import Button from '@/components/button';
 import Table from '@/components/table';
 import TableRow from '@/components/table-row';
 import { getTLDPrices } from '@/services/domain';
@@ -12,7 +11,7 @@ export default function Home() {
 
   const [tlds, setTlds] = useState([]);
   const [query, setQuery] = useState('');
-  const [isFetching, setIsFetching] = useState(false)
+  const [isFetching, setIsFetching] = useState(false);
 
   useEffect(() => {
 
@@ -60,9 +59,9 @@ export default function Home() {
       <Table>
         {
           !isFetching && query == '' ? tlds.map(domain => (
-            <TableRow domain={domain} />
+            <TableRow key={domain.domain} domain={domain} />
           )) : filtered.map(domain => (
-            <TableRow domain={domain} />
+            <TableRow key={domain.domain} domain={domain} />
           ))
         }
       </Table>

@@ -7,7 +7,7 @@ export default function TableRow({ domain }) {
       <th>{domain.domain}</th>
       <th>{domain.status}</th>
       <th>&euro;{domain.price}</th>
-      <th><Button domain={domain}>Kopen</Button></th>
+      <th><Button domain={domain}>Verwijder</Button></th>
     </tr>
   );
 }
